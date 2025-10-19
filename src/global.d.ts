@@ -1,4 +1,6 @@
 // src/global.d.ts
+
+export {};
 declare module "*.glb";
 declare module "*.png";
 declare module "lenis/react" {
@@ -20,6 +22,11 @@ declare module 'three/tsl' {
   export * from 'three';
 }
 
+declare module 'meshline' {
+  export const MeshLineGeometry: any;
+  export const MeshLineMaterial: any;
+}
+
 // MeshLine types
 declare global {
   namespace JSX {
@@ -30,4 +37,3 @@ declare global {
   }
 }
 
-export {};
